@@ -2,5 +2,8 @@
 
 <% @coaches.each_with_index do |coach, i| %>
   <a href=<%= "/coaches/#{i}" %> ><p><%= coach %></p></a>
+  <a href=<%= "/coaches/#{i}/edit" %>>Edit</a>
 <% end %>
+
+<a href="/coaches/new">Create a New Coach</a>
 

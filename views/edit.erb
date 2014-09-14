@@ -1,0 +1,5 @@
+<form method="post" action= <%="/coaches/#{@id}"  %>>
+  <input type="hidden" name="_method" value="put" />
+  <input type="text" name="coach_name" value = <%= @coach %>>
+  <input type="submit">
+</form>
