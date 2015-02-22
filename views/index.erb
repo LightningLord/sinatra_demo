@@ -1,0 +1,10 @@
+<h1>DBC Coaches</h1>
+<ul>
+  <!-- erb tags allows you to embed ruby into html -->
+  <!-- with equal sign: it is visible in the DOM (without equal signs means not visible) -->
+  <% @coaches.each_with_index do |coach, index| %>
+    <li><a href="/coaches/<%= index %>"><%= coach %></a></li>
+  <% end %>
+</ul>
+
+<p><a href="/coaches/new">New Coach</a></p>
