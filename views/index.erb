@@ -1,0 +1,13 @@
+<h1>Coaches Home Page</h1>
+<!-- these erb tags allow ruby to be embedded into
+an html file -->
+<ul>
+  <% @coaches.each_with_index do |coach, index| %>
+    <li><a href="/coaches/<%= index %>"><%= coach %></a></li>
+  <% end %>
+</ul>
+
+<a href="/coaches/new">Create New coach</a>
+
+
+
