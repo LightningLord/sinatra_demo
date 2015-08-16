@@ -1,0 +1,10 @@
+<h1>Coaches Page</h1>
+<ul>
+  <!-- this line will not be in the dom (no equal sign) -->
+  <% @coaches.each_with_index do |coach, index| %>
+  <!-- with equal sign- this line will be in the dom -->
+    <li><p><a href="coaches/<%= index %>"><%= coach %></a></p></li>
+  <% end %>
+</ul>
+
+
