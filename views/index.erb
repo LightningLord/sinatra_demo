@@ -1,0 +1,10 @@
+<h1>DBC Coaches</h1>
+<ul>
+  <!-- without equal sign- doesn't show up in the DOM -->
+  <% @coaches.each_with_index do |coach, index| %>
+  <!-- with equal sign- does show up in the DOM -->
+    <li><a href="/coaches/<%= index  %>"><%= coach %></a></li>
+  <% end %>
+</ul>
+
+<a href="/coaches/new">Create a New Coach</a>
